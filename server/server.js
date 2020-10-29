@@ -16,6 +16,7 @@ app.use(bodyParser.json());
 // Routes
 app.use(require('./routes/usuario'));
 
+// Conexión BBDD
 mongoose.connect(
     process.env.URLDB,
     {
